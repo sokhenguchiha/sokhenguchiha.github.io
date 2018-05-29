@@ -1,0 +1,177 @@
+body{
+margin: 0;
+font-family: 'Roboto Slab', serif;
+height: 2000px;
+}
+
+nav{
+    position:fixed;
+    top: 0px;
+    width: 100%;
+}
+.container{
+    background-color:teal;
+    font-size: 20px;
+    overflow:auto;
+    padding:20px;
+    position: absolute;
+    width: 100%;
+}
+.container a{
+    text-decoration: none;
+    color:#fff;
+
+}
+
+.menu {
+    float: right;
+    /* background: black; */
+    margin-right: 50px;
+    
+}
+.menu a{
+    padding:20px 10px;
+    color: #fff;
+    transition: 0.3s;
+}
+.menu a:hover{
+    color:rgb(129, 129, 196);
+    background:rgb(139, 68, 68);
+}
+
+
+
+/* 
+@media(max-width:900px){
+.container{
+    overflow:auto;
+}
+.logo{
+    position: relative;
+    animation-name: logo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+span{
+    display: block;
+    float: left;
+}
+.menu{
+    float: left;
+    margin-top:10px;
+    position: relative;
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    height: 100%;
+    float: left;
+
+    display: none;
+}
+.menu a{
+    display: block;
+   
+}
+@keyframes anime {
+    0%{left:-200px;top:10px;}
+    100%{left:0px;top:10px;}
+}
+@keyframes logo {
+    0%{left:-200px;top:0px;}
+    100%{left:50px;top: 0px;}
+}
+}   */
+/* side nav */
+
+#btn{
+    cursor: pointer;
+    color:#fff;
+    /* margin-left: 50px; */
+    font-size: 20px;
+}
+#btn:hover{
+    /* background: grey; */
+    border-radius: 50%;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #111;
+    background: rgb(0,0,0,0.9);
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top:60px;
+}
+.sidenav a{
+    padding:8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    /* color:#818181; */
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color:rgb(129, 129, 196);
+    
+     /* color:blue; */
+}
+.closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+
+}
+.top-sidenav{
+    background-color:teal;
+    font-size: 20px;
+    overflow:auto;
+    padding:20px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: none;
+
+}
+
+
+.logo-content{
+    float: right;
+    /* position: absolute; */
+    margin-right: 100px;
+    /* text-align: center */
+}
+.logo-content a{
+   text-decoration: none;
+   color:#fff;
+}
+
+@media(max-width:900px){
+    .container{
+        display: none;
+    }
+    .sidenav-container{
+        display: block;
+    }
+    .sidenav{
+        display: block;
+    }
+    .top-sidenav{
+        display: block;
+    }
+    .logo-content{
+        animation-name: fly;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    
+}
